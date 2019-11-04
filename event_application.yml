@@ -1,8 +1,18 @@
 options:
   hide_event_toc: False
   hide_mlh_toc: False
-  min_resume_age: 17
+  min_resume_age: 16
 custom_fields:
+ -name: ethnicity
+ label: 'What is your race/ethnicity?'
+ type: select
+ options:
+   -Hispanic or Latinx
+   -African American
+   -Asian
+   -Caucasian
+   -Other
+   #need to double check if I missed anyone
  - name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
@@ -98,6 +108,15 @@ custom_fields:
     - RedPandaHacks t-shirt guerilla marketing
     - I go to UMass
     - Other
+ -name: travel
+  label: 'Where are you traveling from?'
+  type: textarea
+  required: True
+ -name: travel_reimbursment
+  label: 'Are you requesting travel reimbursement this year?'
+  type: boolean
+  required: True
+  #Need access to application question document
  - name: what_hardware
    label: 'What hardware do you want to see at RedPandaHacks?'
    type: 'textarea'
