@@ -3,6 +3,31 @@ options:
   hide_mlh_toc: False
   min_resume_age: 16
 custom_fields:
+ -name: travel
+ label: 'Where are you traveling from?'
+ type: textarea
+ max_char: 60
+ required: True
+ -name: travel_reimbursment
+ label: 'Are you planning on applying for travel reimbursement?'
+ type: boolean
+ required: True
+ -name: scholarship_1
+ label: 'If you're applying for travel reimbursement, what city are you traveling from?
+ type: textarea
+ max_chars: 60
+ -name: scholarship_2
+ label: 'What will be your mode of transportation?'
+ type: textarea
+ max_chars: 20
+ -name: scholarship_3
+ label: 'What does diversity in tech mean to you?'
+ type: textarea
+ max_chars: 500
+ -name: scholarship_4
+ label: 'Why do you want to attend TechTogether Boston?'
+ type: textarea
+ max_chars: 500
  -name: ethnicity
  label: 'What is your race/ethnicity? (select all that apply)'
  type: multiselect
@@ -13,6 +38,12 @@ custom_fields:
    -Caucasian
    -Other
    #need to double check if I missed anyone
+   -name: goals
+   label: 'What is your goal for attending TechTogether Boston?'
+   type: textarea
+   required: True
+   max_chars: 500
+   
  - name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
@@ -63,6 +94,7 @@ custom_fields:
     - Objective C
     - C/C++/C#
     - Python
+    - I've never coded before
  - name: hardware_skills
    label: 'Hardware Skills (select all that apply)'
    type: multiselect
@@ -88,10 +120,36 @@ custom_fields:
     - Hack with people you don't know
     - Receive swag items from sponsors
     - Network with sponsors
- - name: interested_in_beginner
-   label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
-   type: boolean
-   required: True
+   -name: team_forming
+   label: 'Would you like to get team reccommendations?'
+   type: select
+   options:
+    -Yes, sign me up!
+    -No, I have a complete team
+    required: True
+    -name: teammates
+    label: 'Who are your teammates? (put their emails down)'
+    type: textarea
+    max_chars: 60
+   -name: particular_topic
+   label: 'Which of these topics interest you? (Select all that apply)'
+   type: multiselect
+   options:
+    -Disaster Relief/Humanitarian Crisis
+    -Social Conflicts
+    -FinTech
+    -Education
+    -Environment
+    -Health and Wellness
+    -I don't have a strong topic of interest
+  - name: team_background
+  label: 'Do you have a preference about your teammates' technical background? '
+  type: multiselect
+  options: 
+    -I prefer having teammates with similar programming experience as me
+    -I don't have any preference
+    -I prefer my teammates to have more experience in programming
+    -I don't mind teammates with less experience. I like to mentor!
  - name: how_did_you_hear
    label: 'How did you hear about TechTogether?'
    type: multiselect
@@ -108,22 +166,12 @@ custom_fields:
     - TechTogether Boston Brand Ambassador
     - I go to Boston University
     - Other
- -name: travel
-  label: 'Where are you traveling from?'
-  type: textarea
-  required: True
- -name: travel_reimbursment
-  label: 'Are you requesting travel reimbursement this year?'
-  type: boolean
-  required: True
-  #Need access to application question document
- - name: what_hardware
-   label: 'What hardware do you want to see at TechTogether Boston 2020?'
-   type: 'textarea'
-   max_chars: 500
- - name: fun_question
-   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
-   #Don't know if we want to change the "fun question"
+ name: brand_ambassador_referral
+ label: 'If you were referred by a TechTogether Brand Ambassador, let us know who!'
+ type: textarea
+ max_chars: 30
+ 
+ 
    
 
 
