@@ -161,17 +161,18 @@
       "type": "select", 
       "options": [
         "Disaster Relief/Humanitarian Crisis", 
-        "Social Conflicts", 
+        "Political Issues", 
         "FinTech", 
         "Education", 
         "Environment", 
         "Health and Wellness", 
+        "Diversity and Inclusion",
         "I don't have a strong topic of interest"
       ], 
       "name": "particular_topic"
     }, 
     {
-      "label": "Would you like to get team reccommendations?", 
+      "label": "Would you like to get team recommendations?", 
       "required": true, 
       "type": "select", 
       "options": [
@@ -198,19 +199,32 @@
       "name": "teammate_preference"
     }, 
     {
+      "label": "How much of TechTogether Boston will you be able to attend", 
+      "type": "select", 
+      "required": true,
+      "options": [
+        "Arriving Friday night", 
+        "Arriving Saturday morning",
+        "Leaving Saturday morning",
+        "Leaving Sunday morning",
+        "For the entire event"
+      ], 
+      "name": "teammate_preference"
+    }, 
+    {
       "label": "How did you hear about TechTogether?", 
       "required": true, 
       "type": "multiselect", 
       "options": [
-        "I previously attended TechTogether", 
         "From the MLH website", 
-        "From TechTogether New York", 
+        "From a mailing list",
+        "From a TechTogether event", 
         "From another MLH event", 
         "Word of mouth", 
         "From a teacher/professor", 
         "From a friend", 
         "Social media", 
-        "TechTogether Boston Brand Ambassador", 
+        "From our amazing Brand Ambassadors", 
         "I go to Boston University", 
         "Other"
       ], 
@@ -218,7 +232,7 @@
     }, 
     {
       "name": "brand_ambassador_referral", 
-      "label": "If you were referred by a TechTogether Brand Ambassador, let us know who!"
+      "label": "If you were referred by a Brand Ambassador, let us know who!"
     }
   ]
 }
