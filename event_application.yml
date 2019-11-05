@@ -1,4 +1,3 @@
-
 {
   "options": {
     "min_resume_age": 16, 
@@ -162,18 +161,17 @@
       "type": "select", 
       "options": [
         "Disaster Relief/Humanitarian Crisis", 
-        "Political Issues", 
+        "Social Conflicts", 
         "FinTech", 
         "Education", 
         "Environment", 
         "Health and Wellness", 
-        "Diversity and Inclusion"
         "I don't have a strong topic of interest"
       ], 
       "name": "particular_topic"
     }, 
     {
-      "label": "Would you like to get team recommendations?", 
+      "label": "Would you like to get team reccommendations?", 
       "required": true, 
       "type": "select", 
       "options": [
@@ -199,19 +197,33 @@
       ], 
       "name": "teammate_preference"
     }, 
+        {
+      "label": "How much of Tech Together will you be able to attend?", 
+      "type": "select", 
+      "required": true,
+      "options": [
+        "Arriving Friday night",
+        "Arriving Saturday morning",
+        "Leaving early on Saturday",
+        "Leaving early on Sunday morning",
+        "I'm staying for the entire event" 
+      ], 
+      "name": "teammate_preference"
+    }, 
     {
       "label": "How did you hear about TechTogether?", 
       "required": true, 
       "type": "multiselect", 
       "options": [
+        "I previously attended TechTogether event", 
         "From the MLH website", 
-        "From a TechTogether event", 
+        "From our mailing list", 
         "From another MLH event", 
         "Word of mouth", 
         "From a teacher/professor", 
         "From a friend", 
         "Social media", 
-        "TechTogether Boston Brand Ambassador", 
+        "From our amazing Brand Ambassadors", 
         "I go to Boston University", 
         "Other"
       ], 
@@ -219,7 +231,7 @@
     }, 
     {
       "name": "brand_ambassador_referral", 
-      "label": "If you were referred by a TechTogether Brand Ambassador, let us know who!"
+      "label": "If you were referred by a Brand Ambassador, let us know who!"
     }
   ]
 }
