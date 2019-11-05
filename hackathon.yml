@@ -3,8 +3,8 @@ version: 2020 # Could also be a roman numeral or other number, will be concatena
 main_website: https://boston.techtogether.io
 dashboard_url: https://dashboard.techtogether.io
 logos:
-  primary_path: TechTogether_Logo.png
-  nav_path: TechTogether_Logo.png
+  primary_path: mainLogo.png
+  nav_path: navLogo.png
 emails:
   donotreply: info@techtogether.io
   contact: info@techtogether.io
