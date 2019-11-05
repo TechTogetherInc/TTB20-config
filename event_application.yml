@@ -6,28 +6,40 @@ custom_fields:
  - name: travel
    label: 'Where are you traveling from?'
    type: textarea
-   max_char: 60
+   max_chars: 60
    required: True
  - name: travel_reimbursment
    label: 'Are you planning on applying for travel reimbursement?'
    type: boolean
    required: True
-#  - name: scholarship_1
-#    label: 'If you're applying for travel reimbursement, what city are you traveling from?
-#    type: textarea
-#    max_chars: 60
-#  - name: scholarship_2
-#    label: 'What will be your mode of transportation?'
-#    type: textarea
-#    max_chars: 20
-#  - name: scholarship_3
-#    label: 'What does diversity in tech mean to you?'
-#    type: textarea
-#    max_chars: 500
-#  - name: scholarship_4
-#    label: 'Why do you want to attend TechTogether Boston?'
-#    type: textarea
-#    max_chars: 500
+   toggle_field: scholarship_1
+   toggle_field: scholarship_2
+   toggle_field: scholarship_4
+   toggle_field: scholarship_5     
+ - name: scholarship_1
+   label: 'If you're applying for travel reimbursement, what city are you traveling from?
+   type: textarea
+   max_chars: 60
+   hidden: True
+   required: True
+ - name: scholarship_2
+   label: 'What will be your mode of transportation?'
+   type: textarea
+   max_chars: 20
+   hidden: True
+   required: True
+ - name: scholarship_3
+   label: 'What does diversity in tech mean to you?'
+   type: textarea
+   max_chars: 500
+   hidden: True
+   required: True   
+ - name: scholarship_4
+   label: 'Why do you want to attend TechTogether Boston?'
+   type: textarea
+   max_chars: 500
+   hidden: True
+   required: True   
 #  - name: ethnicity
 #    label: 'What is your race/ethnicity? (select all that apply)'
 #    type: multiselect
