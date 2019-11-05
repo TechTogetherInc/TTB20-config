@@ -6,7 +6,7 @@
   }, 
   "custom_fields": [
     {
-      "label": "What is your race/ethnicity? (select all that apply)", 
+      "label": "What is your race/ethnicity?", 
       "type": "multiselect", 
       "options": [
         "Hispanic or Latinx", 
@@ -204,10 +204,10 @@
       "options": [
         "I previously attended TechTogether", 
         "From the MLH website", 
-        "From TechTogether NY", 
+        "From TechTogether New York", 
         "From another MLH event", 
         "Word of mouth", 
-        "From a teacher", 
+        "From a teacher/professor", 
         "From a friend", 
         "Social media", 
         "TechTogether Boston Brand Ambassador", 
