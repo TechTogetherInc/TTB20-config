@@ -4,7 +4,7 @@ options:
   min_resume_age: 16
 custom_fields:
   - name: ethnicity
-    label: "What is your race/ethnicity? (select all that apply)"
+    label: "What is your race/ethnicity?"
     type: multiselect
     options:
       - Hispanic or Latinx
@@ -83,7 +83,7 @@ custom_fields:
       - Swift
       - C/C++/C#
       - Python
-      - I've never coded before
+      - "I've never coded before"
   - name: programming_experience
     label: "How experienced are you with programming?"
     type: select
@@ -95,7 +95,7 @@ custom_fields:
       - More than a year
       - More than 2 years
   - name: experience_area
-    label: " What are the areas where you have the most experience?"
+    label: "What are the areas where you have the most experience?"
     type: select
     required: True
     options:
@@ -109,7 +109,7 @@ custom_fields:
       - Front-end Development
       - Back-end Development
       - Full-stack
-      - I'm willing to learn anything!
+      - "I'm willing to learn anything!"
   - name: other_skills
     label: "If there are any other tech-related skills not listed above that you would like to share, list them below"
     type: textarea
@@ -125,7 +125,7 @@ custom_fields:
       - Education
       - Environment
       - Health and Wellness
-      - I don't have a strong topic of interest
+      - "I don't have a strong topic of interest"
   - name: team_forming
     label: "Would you like to get team reccommendations?"
     type: select
@@ -142,9 +142,9 @@ custom_fields:
     type: multiselect
     options:
       - I prefer having teammates with similar programming experience as me
-      - I don't have any preference
+      - "I don't have any preference"
       - I prefer my teammates to have more experience in programming
-      - I don't mind teammates with less experience. I like to mentor!
+      - "I don't mind teammates with less experience. I like to mentor!"
   - name: how_did_you_hear
     label: "How did you hear about TechTogether?"
     type: multiselect
