@@ -1,181 +1,225 @@
-options:
-  min_resume_age: 16
-  hide_event_toc: false
-  hide_mlh_toc: false
-custom_fields:
-  - label: What is your race/ethnicity?
-    type: multiselect
-    options:
-      - Hispanic or Latinx
-      - African American
-      - Asian
-      - Caucasian
-      - Other
-    name: ethnicity
-  - validate_regex: "\\A(https:\\/\\/)?(www.)?linkedin.com\\/in\\/\\S+\\z"
-    label: LinkedIn URL
-    name: linkedin_url
-    validate_error: "Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile"
-  - validate_regex: "\\A(https:\\/\\/)?(www.)?github.com\\/\\S+\\z"
-    label: GitHub URL
-    name: github_url
-    validate_error: "Your Github URL is invalid. Example format: https://github.com/yourprofile"
-  - name: other_url
-    label: Other website URL
-  - required: true
-    name: travel
-    label: Where are you traveling from?
-  - required: true
-    type: boolean
-    name: travel_reimbursment
-    label: Are you planning on applying for travel reimbursement?
-  - name: scholarship_2
-    label: What will be your mode of transportation? (required for travel reimbursements)
-  - max_chars: 500
-    type: textarea
-    name: scholarship_3
-    label: What does diversity in tech mean to you? (required for travel reimbursements)
-  - max_chars: 500
-    type: textarea
-    name: scholarship_4
-    label: Why do you want to attend TechTogether Boston? (required for travel reimbursements)
-  - label: What is your goal for attending TechTogether Boston?
-    required: true
-    type: multiselect
-    options:
-      - To have fun, enjoy free food and swag
-      - To learn a new tech stack or tool
-      - To build a cool project with my team
-      - To connect with other hackers and mentors
-      - To win a category or prize
-      - To go to workshops and tech talks
-    name: goals
-  - label: About how many hackathons have you attended?
-    required: true
-    type: select
-    options:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5 or more
-    name: how_many_hackathons
-  - label: Have you previously attended TechTogether Boston?
-    required: true
-    type: boolean
-    toggle_field: previous_ttb_comments
-    name: been_to_ttb
-  - max_chars: 200
-    hidden: true
-    type: textarea
-    name: previous_ttb_comments
-    label:
-      Since you've attended TechTogether Boston before, is there anything new or
-      different you'd like to see at TechTogether Boston 2020?
-  - label: Which of the following do you have experience with?
-    type: multiselect
-    options:
-      - HTML/CSS
-      - Javascript
-      - PHP
-      - Ruby
-      - Java
-      - Swift
-      - C/C++/C#
-      - Python
-      - I've never coded before
-    name: programming_skills
-  - label: How experienced are you with programming?
-    required: true
-    type: select
-    options:
-      - No programming experience!
-      - Less than 6 months
-      - More than 6 months
-      - More than a year
-      - More than 2 years
-    name: programming_experience
-  - label: " What are the areas where you have the most experience?"
-    required: true
-    type: select
-    options:
-      - UX-UI
-      - Mobile App Dev
-      - Product Management
-      - AI/ Machine Learning
-      - Data Science
-      - Game Development
-      - IoT
-      - Front-end Development
-      - Back-end Development
-      - Full-stack
-      - I'm willing to learn anything!
-    name: experience_area
-  - max_chars: 500
-    type: textarea
-    name: other_skills
-    label:
-      If there are any other tech-related skills not listed above that you would
-      like to share, list them below
-  - label: Which of these topics interest you? (For teammate recommendation)
-    required: true
-    type: select
-    options:
-      - Disaster Relief/Humanitarian Crisis
-      - Political Issues
-      - FinTech
-      - Education
-      - Environment
-      - Health and Wellness
-      - Diversity and Inclusion
-      - I don't have a strong topic of interest
-    name: particular_topic
-  - label: Would you like to get team recommendations?
-    required: true
-    type: select
-    options:
-      - Yes, sign me up!
-      - No, I have a team
-    name: team_forming
-  - max_chars: 200
-    type: textarea
-    name: teammates
-    label: Who are your teammates? (put their emails down)
-  - label:
-      If you opted for teammate recommendations, do you have a preference about
-      your teammates' technical background?
-    type: multiselect
-    options:
-      - I prefer having teammates with similar programming experience as me
-      - I don't have any preference
-      - I prefer my teammates to have more experience in programming
-      - I don't mind teammates with less experience. I like to mentor!
-    name: teammate_preference
-  - label: How much of TechTogether Boston will you be able to attend
-    type: select
-    required: true
-    options:
-      - Arriving Friday night
-      - Arriving Saturday morning
-      - Leaving Saturday morning
-      - Leaving Sunday morning
-      - For the entire event
-    name: teammate_preference
-  - label: How did you hear about TechTogether?
-    required: true
-    type: multiselect
-    options:
-      - From the MLH website
-      - From a mailing list
-      - From a TechTogether event
-      - From another MLH event
-      - Word of mouth
-      - From a teacher/professor
-      - From a friend
-      - Social media
-      - From our amazing Brand Ambassadors
-      - I go to Boston University
-      - Other
-    name: how_did_you_hear
-  - name: brand_ambassador_referral
-    label: If you were referred by a Brand Ambassador, let us know who!
+
+{
+  "options": {
+    "min_resume_age": 16, 
+    "hide_event_toc": false, 
+    "hide_mlh_toc": false
+  }, 
+  "custom_fields": [
+    {
+      "label": "What is your race/ethnicity?", 
+      "type": "multiselect", 
+      "options": [
+        "Hispanic or Latinx", 
+        "African American", 
+        "Asian", 
+        "Caucasian", 
+        "Other"
+      ], 
+      "name": "ethnicity"
+    }, 
+    {
+      "validate_regex": "\\A(https:\\/\\/)?(www.)?linkedin.com\\/in\\/\\S+\\z", 
+      "label": "LinkedIn URL", 
+      "name": "linkedin_url", 
+      "validate_error": "Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile"
+    }, 
+    {
+      "validate_regex": "\\A(https:\\/\\/)?(www.)?github.com\\/\\S+\\z", 
+      "label": "GitHub URL", 
+      "name": "github_url", 
+      "validate_error": "Your Github URL is invalid. Example format: https://github.com/yourprofile"
+    }, 
+    {
+      "name": "other_url", 
+      "label": "Other website URL"
+    }, 
+    {
+      "required": true, 
+      "name": "travel", 
+      "label": "Where are you traveling from?"
+    }, 
+    {
+      "required": true, 
+      "type": "boolean", 
+      "name": "travel_reimbursment", 
+      "label": "Are you planning on applying for travel reimbursement?"
+    }, 
+    {
+      "name": "scholarship_2", 
+      "label": "What will be your mode of transportation? (required for travel reimbursements)"
+    }, 
+    {
+      "max_chars": 500, 
+      "type": "textarea", 
+      "name": "scholarship_3", 
+      "label": "What does diversity in tech mean to you? (required for travel reimbursements)"
+    }, 
+    {
+      "max_chars": 500, 
+      "type": "textarea", 
+      "name": "scholarship_4", 
+      "label": "Why do you want to attend TechTogether Boston? (required for travel reimbursements)"
+    }, 
+    {
+      "label": "What is your goal for attending TechTogether Boston?", 
+      "required": true, 
+      "type": "multiselect", 
+      "options": [
+        "To have fun, enjoy free food and swag", 
+        "To learn a new tech stack or tool", 
+        "To build a cool project with my team", 
+        "To connect with other hackers and mentors", 
+        "To win a category or prize", 
+        "To go to workshops and tech talks"
+      ], 
+      "name": "goals"
+    }, 
+    {
+      "label": "About how many hackathons have you attended?", 
+      "required": true, 
+      "type": "select", 
+      "options": [
+        1, 
+        2, 
+        3, 
+        4, 
+        "5 or more"
+      ], 
+      "name": "how_many_hackathons"
+    }, 
+    {
+      "label": "Have you previously attended TechTogether Boston?", 
+      "required": true, 
+      "type": "boolean", 
+      "toggle_field": "previous_ttb_comments", 
+      "name": "been_to_ttb"
+    }, 
+    {
+      "max_chars": 200, 
+      "hidden": true, 
+      "type": "textarea", 
+      "name": "previous_ttb_comments", 
+      "label": "Since you've attended TechTogether Boston before, is there anything new or different you'd like to see at TechTogether Boston 2020?"
+    }, 
+    {
+      "label": "Which of the following do you have experience with?", 
+      "type": "multiselect", 
+      "options": [
+        "HTML/CSS", 
+        "Javascript", 
+        "PHP", 
+        "Ruby", 
+        "Java", 
+        "Swift", 
+        "C/C++/C#", 
+        "Python", 
+        "I've never coded before"
+      ], 
+      "name": "programming_skills"
+    }, 
+    {
+      "label": "How experienced are you with programming?", 
+      "required": true, 
+      "type": "select", 
+      "options": [
+        "No programming experience!", 
+        "Less than 6 months", 
+        "More than 6 months", 
+        "More than a year", 
+        "More than 2 years"
+      ], 
+      "name": "programming_experience"
+    }, 
+    {
+      "label": " What are the areas where you have the most experience?", 
+      "required": true, 
+      "type": "select", 
+      "options": [
+        "UX-UI", 
+        "Mobile App Dev", 
+        "Product Management", 
+        "AI/ Machine Learning", 
+        "Data Science", 
+        "Game Development", 
+        "IoT", 
+        "Front-end Development", 
+        "Back-end Development", 
+        "Full-stack", 
+        "I'm willing to learn anything!"
+      ], 
+      "name": "experience_area"
+    }, 
+    {
+      "max_chars": 500, 
+      "type": "textarea", 
+      "name": "other_skills", 
+      "label": "If there are any other tech-related skills not listed above that you would like to share, list them below"
+    }, 
+    {
+      "label": "Which of these topics interest you? (For teammate recommendation)", 
+      "required": true, 
+      "type": "select", 
+      "options": [
+        "Disaster Relief/Humanitarian Crisis", 
+        "Political Issues", 
+        "FinTech", 
+        "Education", 
+        "Environment", 
+        "Health and Wellness", 
+        "Diversity and Inclusion"
+        "I don't have a strong topic of interest"
+      ], 
+      "name": "particular_topic"
+    }, 
+    {
+      "label": "Would you like to get team recommendations?", 
+      "required": true, 
+      "type": "select", 
+      "options": [
+        "Yes, sign me up!", 
+        "No, I have a team"
+      ], 
+      "name": "team_forming"
+    }, 
+    {
+      "max_chars": 200, 
+      "type": "textarea", 
+      "name": "teammates", 
+      "label": "Who are your teammates? (put their emails down)"
+    }, 
+    {
+      "label": "If you opted for teammate recommendations, do you have a preference about your teammates' technical background?", 
+      "type": "multiselect", 
+      "options": [
+        "I prefer having teammates with similar programming experience as me", 
+        "I don't have any preference", 
+        "I prefer my teammates to have more experience in programming", 
+        "I don't mind teammates with less experience. I like to mentor!"
+      ], 
+      "name": "teammate_preference"
+    }, 
+    {
+      "label": "How did you hear about TechTogether?", 
+      "required": true, 
+      "type": "multiselect", 
+      "options": [
+        "From the MLH website", 
+        "From a TechTogether event", 
+        "From another MLH event", 
+        "Word of mouth", 
+        "From a teacher/professor", 
+        "From a friend", 
+        "Social media", 
+        "TechTogether Boston Brand Ambassador", 
+        "I go to Boston University", 
+        "Other"
+      ], 
+      "name": "how_did_you_hear"
+    }, 
+    {
+      "name": "brand_ambassador_referral", 
+      "label": "If you were referred by a TechTogether Brand Ambassador, let us know who!"
+    }
+  ]
+}
