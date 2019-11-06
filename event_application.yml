@@ -131,7 +131,7 @@
       "name": "programming_experience"
     }, 
     {
-      "label": " What are the areas where you have the most experience?", 
+      "label": " What is the area where you have the most experience?", 
       "required": true, 
       "type": "select", 
       "options": [
