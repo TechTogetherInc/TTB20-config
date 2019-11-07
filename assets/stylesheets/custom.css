@@ -2,5 +2,5 @@
 
 /* This will change the avatar image for every user. */
 span.avatar {
-    background-image: url('blob_placeholder.png') !important;
+    background-image: url(https://techtogether20.blob.core.windows.net/images/cat.jpg) !important;
 }
