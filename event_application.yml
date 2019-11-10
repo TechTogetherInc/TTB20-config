@@ -197,7 +197,7 @@
       ], 
       "name": "teammate_preference"
     }, 
-        {
+    {
       "label": "How much of Tech Together will you be able to attend?", 
       "type": "select", 
       "required": true,
@@ -208,7 +208,7 @@
         "Leaving early on Sunday morning",
         "I'm staying for the entire event" 
       ], 
-      "name": "teammate_preference"
+      "name": "arrival_time"
     }, 
     {
       "label": "How did you hear about TechTogether?", 
