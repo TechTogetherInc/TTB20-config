@@ -39,25 +39,28 @@
       "label": "Where are you traveling from?"
     }, 
     {
-      "required": true, 
       "type": "boolean", 
       "name": "travel_reimbursment", 
-      "label": "Are you planning on applying for travel reimbursement?"
+      "label": "Are you planning on applying for travel reimbursement?",
+      "toggle_multi_fields": ["scholarship_2", "scholarship_3", "scholarship_4"]
     }, 
     {
-      "name": "scholarship_2", 
+      "name": "scholarship_2",
+      "hidden": true,      
       "label": "What will be your mode of transportation? (required for travel reimbursements)"
     }, 
     {
       "max_chars": 500, 
       "type": "textarea", 
-      "name": "scholarship_3", 
+      "name": "scholarship_3",
+      "hidden": true, 
       "label": "What does diversity in tech mean to you? (required for travel reimbursements)"
     }, 
     {
       "max_chars": 500, 
       "type": "textarea", 
-      "name": "scholarship_4", 
+      "name": "scholarship_4",
+      "hidden": true, 
       "label": "Why do you want to attend TechTogether Boston? (required for travel reimbursements)"
     }, 
     {
@@ -79,6 +82,7 @@
       "required": true, 
       "type": "select", 
       "options": [
+        0,
         1, 
         2, 
         3, 
