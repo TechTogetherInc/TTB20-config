@@ -41,6 +41,7 @@
     {
       "type": "boolean", 
       "name": "travel_reimbursment", 
+      "required": true, 
       "label": "Are you planning on applying for travel reimbursement?",
       "toggle_multi_fields": ["scholarship_2", "scholarship_3", "scholarship_4"]
     }, 
@@ -85,7 +86,7 @@
         0,
         1, 
         2, 
-        3, 
+        3,  
         4, 
         "5 or more"
       ], 
