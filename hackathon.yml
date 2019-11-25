@@ -6,7 +6,7 @@ logos:
   primary_path: mainLogo.png
   nav_path: navLogo.png
 emails:
-  donotreply: info@techtogether.io
+  donotreply: techtogetherboston-donotreply@techtogether.io
   contact: info@techtogether.io
 slack:
   subdomain: ttboston
