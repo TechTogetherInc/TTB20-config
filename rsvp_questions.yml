@@ -1,8 +1,4 @@
 custom_questions:
  - name: workshops
-   label: "What workshops do you want to see at RedPandaHacks?"
-   type: multiselect
-   options:
-    - Introduction to pandas
-    - Bamboo Eating 101
+   label: "What workshops do you want to see at TechTogether Boston 2020?"
 
