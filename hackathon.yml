@@ -8,8 +8,8 @@ logos:
 emails:
   donotreply: techtogetherboston-donotreply@techtogether.io
   contact: info@techtogether.io
-# slack:
-#   subdomain: ttboston2020
+slack:
+  subdomain: ttboston20
 applications:
   mode: 'open'
   # options: open, waitlist, or closed. defaults to closed.
