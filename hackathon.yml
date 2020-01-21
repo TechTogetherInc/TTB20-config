@@ -9,7 +9,7 @@ emails:
   donotreply: techtogetherboston-donotreply@techtogether.io
   contact: info@techtogether.io
 slack:
-  subdomain: ttboston20
+  subdomain: ttboston2020
 applications:
   mode: 'open'
   # options: open, waitlist, or closed. defaults to closed.
